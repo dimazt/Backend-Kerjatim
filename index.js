@@ -78,6 +78,6 @@ app.use(versionAPP, TaskListRoute)
 app.use(versionAPP, UploadFileRoute)
 app.use(versionAPP, FeedbackRoute)
 
-app.listen(process.env.APP_PORT, () => {
+app.listen(process.env.APP_PORT || 5001, () => {
     console.log('Server up and running...');
 })
