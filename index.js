@@ -38,9 +38,9 @@ const app = express();
 // });
 // Syncron Database
 // // Funcion Untuk Mengenerate Tabel Secara Otomatis
-(async () => {
-    await db.sync()
-})()
+// (async () => {
+//     await db.sync()
+// })()
 // Session
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
