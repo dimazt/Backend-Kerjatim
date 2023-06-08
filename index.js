@@ -56,7 +56,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 // Middleware
 app.use(cors({
     credentials: true,
-    origin: ('app.kerjatim.id')
+    origin: ('*')
 }))
 app.use(express.json())
 const versionAPP = '/v1'
