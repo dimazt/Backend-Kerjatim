@@ -60,9 +60,9 @@ export const resetPassword = async (req, res) => {
             subject: 'Reset Your Password',
             template: 'reset-password', // the name of the template file i.e email.handlebars
             context: {
-                link: `app.kerjatim.id/auth/new-password?token=${verifyEmail}`,
+                link: `https://kerjatim.rsib.cloud/auth/new-password?token=${verifyEmail}`,
                 users_name: response.name,
-                logo: 'http://api.kerjatim.id/public/images/logo/kerjatim_logo.png'
+                logo: 'https://api-kerjatim.rsib.cloud/public/images/logo/kerjatim_logo.png'
             }
         }
         transporterGmail.sendMail(mailOptions, function (error, info) {

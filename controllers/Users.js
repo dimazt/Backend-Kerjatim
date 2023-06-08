@@ -99,9 +99,9 @@ export const createUser = async (req, res) => {
             subject: 'Welcome to Kerjatim.id | Email verification is required!',
             template: 'verify-email', // the name of the template file i.e email.handlebars
             context: {
-                link: `app.kerjatim.id/auth/email-validation?token=${verifyEmail}`,
+                link: `https://kerjatim.rsib.cloud/auth/email-validation?token=${verifyEmail}`,
                 users_name: name,
-                logo: 'http://api.kerjatim.id/public/images/logo/kerjatim_logo.png'
+                logo: 'https://api-kerjatim.rsib.cloud/public/images/logo/kerjatim_logo.png'
             }
         }
         transporterGmail.sendMail(mailOptions, function (error, info) {
